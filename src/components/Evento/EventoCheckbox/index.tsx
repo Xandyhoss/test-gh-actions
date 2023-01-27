@@ -9,7 +9,7 @@ const EventoCheckbox: React.FC<{ evento: IEvento, aoAlterarStatus: (id: number) 
     evento.completo ? 'fa-check-square' : 'fa-square'
   ]
 
-  return (<i className={estilos.join(' ')} onClick={() => aoAlterarStatus(evento.id!)}></i>)
+  return (<i className={estilos.join(' ')} onClick={() => aoAlterarStatus(evento.id as number)}></i>)
 }
 
 export default EventoCheckbox
